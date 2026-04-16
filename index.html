@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>IRMANUFA - Data Anggota</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HALAMAN LOGIN -->
+    <div id="loginScreen" class="screen">
+      <div class="box">
+        <div class="logo">🕌</div>
+        <h2>IRMANUFA</h2>
+        <p>Ikatan Remaja Masjid Jami Nurul Falah</p>
+        <p class="small">Desa Ujungjaya | Kabinet Golden Generation</p>
+        <p class="small">Masa Bakti 2027-2029</p>
+
+        <input type="text" id="username" placeholder="Username" class="input" />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="input"
+        />
+        <button id="loginBtn" class="btn">Login</button>
+        <p id="loginError" class="error-text"></p>
+      </div>
+    </div>
+
+    <!-- HALAMAN DASHBOARD -->
+    <div id="dashboardScreen" class="screen" style="display: none">
+      <!-- Header -->
+      <div class="header">
+        <button id="menuToggleBtn" class="menu-btn">☰</button>
+        <div class="header-title">
+          <strong>IRMANUFA</strong>
+          <small>Golden Generation</small>
+        </div>
+        <button id="logoutBtn" class="logout-btn">🚪</button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebarPanel" class="sidebar">
+        <div class="sidebar-header">
+          <h3>📋 Menu</h3>
+          <button id="closeSidebarBtn" class="close-sidebar">✕</button>
+        </div>
+        <div class="sidebar-user">
+          <div class="avatar">👥</div>
+          <p><strong>Anggota IRMANUFA</strong></p>
+          <p class="small-text">Kabinet Golden Generation</p>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item active" data-page="search">🔍 Cari Anggota</div>
+          <div class="menu-item" data-page="about">ℹ️ Tentang</div>
+        </div>
+      </div>
+      <div id="overlay" class="overlay"></div>
+
+      <!-- Area Konten Utama -->
+      <div class="content">
+        <!-- Halaman Cari -->
+        <div id="searchPage" class="page-content active">
+          <div class="card">
+            <h3>🔍 Cari Data Anggota</h3>
+            <p>Masukkan Kode Member untuk melihat informasi anggota</p>
+            <div class="search-row">
+              <input
+                type="text"
+                id="memberCode"
+                placeholder="Contoh: 26.02.001"
+                class="input"
+              />
+              <button id="searchMemberBtn" class="btn-search">Cari</button>
+            </div>
+          </div>
+
+          <!-- Hasil Pencarian -->
+          <div id="resultBox" class="card result-card" style="display: none">
+            <h3>📄 Hasil Pencarian</h3>
+            <div id="resultDetail"></div>
+          </div>
+
+          <!-- Pesan Error -->
+          <div id="errorMsg" class="error-msg" style="display: none"></div>
+
+          <!-- Info Format Kode -->
+          <div class="card">
+            <h4>📌 Format Kode Member</h4>
+            <p class="format-text">
+              Kode member terdiri dari 3 bagian dengan format:
+              <strong>26.XX.YYY</strong>
+            </p>
+            <p class="format-example">
+              Contoh: <code>26.02.001</code> atau <code>26.08.025</code>
+            </p>
+            <p class="info-note">
+              * Hubungi pengurus jika tidak tahu kode member Anda
+            </p>
+          </div>
+        </div>
+
+        <!-- Halaman Tentang -->
+        <div id="aboutPage" class="page-content">
+          <div class="card">
+            <h3>ℹ️ Tentang IRMANUFA</h3>
+            <p><strong>Ikatan Remaja Masjid Jami Nurul Falah</strong></p>
+            <p>Desa Ujungjaya</p>
+            <hr />
+            <p><strong>Kabinet Golden Generation</strong></p>
+            <p>Masa Bakti 2027 - 2029</p>
+            <hr />
+            <p>
+              Total Anggota Terdaftar: <strong id="totalCount">0</strong> orang
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
