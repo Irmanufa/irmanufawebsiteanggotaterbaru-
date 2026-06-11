@@ -69,6 +69,12 @@ const members = {
     gender: "L",
     jabatan: "Anggota Divisi Keagmasjid",
   },
+"26.02.009": {
+    nama: "Pricillia berliana putri",
+    gender: "P",
+    jabatan: "Anggota Divisi Keagmasjid",
+  },
+  
 
   // ========== DIVISI HUBUNGAN MASYARAKAT (KODE 03) - 9 Orang ==========
   "26.03.001": {
@@ -153,7 +159,13 @@ const members = {
     gender: "L",
     jabatan: "Anggota Divisi PHBI",
   },
-
+  
+"26.04.008": {
+    nama: "Tasya Putriyanto",
+    gender: "P",
+    jabatan: "Anggota Divisi PHBI",
+  },
+  
   // ========== DIVISI PENGEMBANGAN SUMBER DAYA MANUSIA (KODE 05) - 8 Orang ==========
   "26.05.001": {
     nama: "Dwi Fathi Malika Lubna",
@@ -237,6 +249,13 @@ const members = {
     gender: "L",
     jabatan: "Anggota Divisi Kesekretariatan",
   },
+
+  "26.06.009": {
+    nama: "Dewi Anggraeni",
+    gender: "P",
+    jabatan: "Anggota Divisi Kesekretariatan",
+  },
+
 
   // ========== DIVISI PUBLIKASI DEKORASI DAN DOKUMENTASI (KODE 07) - 8 Orang ==========
   "26.07.001": {
