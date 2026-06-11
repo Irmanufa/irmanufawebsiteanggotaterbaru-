@@ -28,7 +28,7 @@ const members = {
   },
   "26.01.006": { nama: "Fahri Maulana", gender: "L", jabatan: "Bendahara II" },
 
-  // ========== DIVISI KEAGAMAAN DAN KEMASJIDAN (KODE 02) - 8 Orang ==========
+  // ========== DIVISI KEAGAMAAN DAN KEMASJIDAN (KODE 02) - 9 Orang ==========
   "26.02.001": {
     nama: "Moldi Trio Ringgo Hervavi",
     gender: "L",
@@ -123,7 +123,7 @@ const members = {
     jabatan: "Anggota Divisi Humas",
   },
 
-  // ========== DIVISI PERINGATAN HARI BESAR ISLAM (KODE 04) - 7 Orang ==========
+  // ========== DIVISI PERINGATAN HARI BESAR ISLAM (KODE 04) - 8 Orang ==========
   "26.04.001": {
     nama: "Akhmad Fauzi Hanafi",
     gender: "L",
@@ -208,7 +208,7 @@ const members = {
     jabatan: "Anggota Divisi PSDM",
   },
 
-  // ========== DIVISI KESEKRETARIATAN (KODE 06) - 8 Orang ==========
+  // ========== DIVISI KESEKRETARIATAN (KODE 06) - 9 Orang ==========
   "26.06.001": {
     nama: "Chindy Kharisya Putri",
     gender: "P",
